@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7313f9fb66.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>YouTube Clone</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="header_left">
+        <button class="header_left_icon">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="./logoyt/logoytt.png" alt="logo de youtube" />
+      </a>
+
+      <div class="header_center">
+        <div class="search_box">
+          <input type="text" placeholder="Buscar" />
+          <button class="search_btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div>
+          <button class="mic_btn">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="header_right">
+        <button class="btn-hidden btn-header-right" id="btn-rigth">
+          <i class="fa-solid fa-upload"></i>
+        </button>
+        <button class="btn-header-right">
+          <i class="fa-solid fa-bell"></i>
+        </button>
+        <button class="btn-header-right" id="header_rigth_icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="btn-perfil">
+          <img src="./logoyt/benito.png" class="perfil_icon" />
+        </button>
+      </div>
+    </header>
+
+    <div class="d-flex">
+      <aside class="aside-padding">
+        <div class="sidebar-lg">
+          <nav class="sidebar_nav flex-col">
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              <span>Inicio</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Shorts</span>
+            </a>
+
+            <hr />
+
+            <a href="#" id="a-gap">
+              <span class="fwb">Suscripciones</span>
+              <button class="sidebar_anchor_icon">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+              </button>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <img src="./logoyt/patonana.png" alt="Patonana" />
+                <span>Oscar Alejandro</span>
+              </div>
+              <span class="punto-azul"></span>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <img src="./logoyt/patonana.png" alt="Patonana" />
+                <span>Luisito Comunica</span>
+              </div>
+              <span class="punto-azul"></span>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <img src="./logoyt/patonana.png" alt="Patonana" />
+                <span>Joseh Malon</span>
+              </div>
+              <span class="punto-azul"></span>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <img src="./logoyt/patonana.png" alt="Patonana" />
+                <span>Dross Rotzank</span>
+              </div>
+              <span class="punto-azul"></span>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <img src="./logoyt/patonana.png" alt="Patonana" />
+                <span>Dot Dager</span>
+              </div>
+              <span class="punto-azul"></span>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <img src="./logoyt/patonana.png" alt="Patonana" />
+                <span>Bobicraft</span>
+              </div>
+              <span class="punto-azul"></span>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <img src="./logoyt/patonana.png" alt="Patonana" />
+                <span>Bad Bunny</span>
+              </div>
+              <span class="punto-azul"></span>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <button class="icon-btn">
+                  <i class="fa-solid fa-chevron-down btn_icon_chevron"></i>
+                </button>
+                <span>Mostrar más</span>
+              </div>
+            </a>
+
+            <hr />
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20" id="a-gap">
+                <span class="fwb">Tú</span>
+                <button class="sidebar_anchor_icon">
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                </button>
+              </div>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <button class="icon-btn">
+                  <i class="fa-solid fa-user"></i>
+                </button>
+                <span>Tu canal</span>
+              </div>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <button class="icon-btn">
+                  <i class="fa-solid fa-clock-rotate-left"></i>
+                </button>
+                <span>Historial</span>
+              </div>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <button class="icon-btn">
+                  <i class="fa-brands fa-youtube"></i>
+                </button>
+                <span>Mis vídeos</span>
+              </div>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <button class="icon-btn">
+                  <i class="fa-solid fa-download"></i>
+                </button>
+                <span>Descargas</span>
+              </div>
+            </a>
+
+            <a href="#" class="nav-link">
+              <div class="nav-link gap-20">
+                <button class="icon-btn">
+                  <i class="fa-solid fa-trophy"></i>
+                </button>
+                <span>Deportes</span>
+              </div>
+            </a>
+          </nav>
+        </div>
+
+        <div class="aside-md flex flexcol">
+          <nav>
+            <a href="#" class="flex flex-col gap-10">
+              <i class="fa-solid fa-house sidebar_icon"></i>
+              <span class="sidebar_span">Inicio</span>
+            </a>
+          </nav>
+
+          <nav>
+            <a href="#" class="flex flex-col gap-10">
+              <svg viewBox="0 0 24 24" class="sidebar_icon">
+                <path
+                  d="m13.467 1.19-8 4.7a5 5 0 00-.255 8.46 5 5 0 005.32 8.462l8-4.7a5 5 0 00.258-8.462 5 5 0 001.641-6.464l-.12-.217a5 5 0 00-6.844-1.78m5.12 2.79a2.999 2.999 0 01-1.067 4.107l-1.327.78a1 1 0 00.096 1.775l.943.423a3 3 0 01.288 5.323l-8 4.7a3 3 0 01-3.039-5.173l1.327-.78a1 1 0 00-.097-1.775l-.942-.423a3 3 0 01-.288-5.323l8-4.7a3 3 0 014.106 1.066ZM15 12l-5-3v6l5-3Z"
+                ></path>
+              </svg>
+              <span class="sidebar_span">Shorts</span>
+            </a>
+          </nav>
+
+          <nav>
+            <a href="#" class="flex flex-col gap-10">
+              <svg class="sidebar_icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"
+                />
+              </svg>
+              <span class="sidebar_span">Suscripciones</span>
+            </a>
+          </nav>
+
+          <nav>
+            <a href="#" class="flex flex-col gap-10">
+              <svg class="sidebar_icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span class="sidebar_span">Tú</span>
+            </a>
+          </nav>
+        </div>
+      </aside>
+
+      <main class="main-content maingap">
+        <nav class="chips-container">
+          <button class="chip" id="chip--todo">Todo</button>
+          <button class="chip">Videojuegos</button>
+          <button class="chip">Pódcasts</button>
+          <button class="chip">Música</button>
+          <button class="chip">En directo</button>
+          <button class="chip">Mixes</button>
+          <button class="chip">Sistemas operativos</button>
+          <button class="chip">Microsoft</button>
+          <button class="chip">Psicología</button>
+          <button class="chip">Historia</button>
+          <button class="chip">Mod</button>
+          <button class="chip">Visto</button>
+          <button class="chip">Novedad para ti</button>
+          <button class="chip">Minecraft</button>
+          <button class="chip">HTML</button>
+          <button class="chip">CSS</button>
+          <button class="chip">Python</button>
+        </nav>
+
+        <section class="d-grid">
+          <article class="video-card">
+            <a href="#" class="thumbnail-wrapper">
+              <img
+                src="./logoyt/dotdager.avif"
+                alt="Miniatura del video"
+                class="thumbnail"
+              />
+              <span class="duration">18:43</span>
+            </a>
+
+            <div class="video-details">
+              <a href="#" class="channel-avatar">
+                <img src="./logoyt/patonana.png" alt="Canal" />
+              </a>
+
+              <div class="video-meta">
+                <h3 class="video-title">Intenté buscar trabajo y está feo.</h3>
+                <span class="channel-name"
+                  >Dager Clips <i class="fa-solid fa-circle-play"></i> 106K
+                  vistas • hace 4m</span
+                >
+              </div>
+
+              <button class="options-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <a href="#" class="thumbnail-wrapper">
+              <img
+                src="./logoyt/dotdagerr.avif"
+                alt="Miniatura del video"
+                class="thumbnail"
+              />
+              <span class="duration">10:38</span>
+            </a>
+
+            <div class="video-details">
+              <a href="#" class="channel-avatar">
+                <img src="./logoyt/patonana.png" alt="Canal" />
+              </a>
+
+              <div class="video-meta">
+                <h3 class="video-title">EL FIN DEL PROGRAMADOR JUNIOR.</h3>
+                <span class="channel-name"
+                  >Dot Dager <i class="fa-solid fa-circle-check"></i>
+                  <i class="fa-solid fa-circle-play"></i> 154K hace 10d</span
+                >
+              </div>
+
+              <button class="options-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <a href="#" class="thumbnail-wrapper">
+              <img
+                src="./logoyt/patonana.png"
+                alt="Miniatura del video"
+                class="thumbnail"
+              />
+              <span class="duration">18:43</span>
+            </a>
+
+            <div class="video-details">
+              <a href="#" class="channel-avatar">
+                <img src="./logoyt/patonana.png" alt="Canal" />
+              </a>
+
+              <div class="video-meta">
+                <h3 class="video-title">Tienes que Aprender a Estar SOLO.</h3>
+                <span class="channel-name"
+                  >Pinwin <i class="fa-solid fa-circle-check"></i>
+                  <i class="fa-solid fa-circle-play"></i
+                ></span>
+                <span class="video-info">164K vistas • hace 5 meses</span>
+              </div>
+
+              <button class="options-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <a href="#" class="thumbnail-wrapper">
+              <img
+                src="./logoyt/dross.avif"
+                alt="Miniatura del video"
+                class="thumbnail"
+              />
+              <span class="duration">23:34</span>
+            </a>
+
+            <div class="video-details">
+              <a href="#" class="channel-avatar">
+                <img src="./logoyt/patonana.png" alt="Canal" />
+              </a>
+
+              <div class="video-meta">
+                <h3 class="video-title">Querido Dross: LA HIJA DE LA FAMOSA</h3>
+                <span class="channel-name"
+                  >DrossRotzank 1,1M hace 1d<i
+                    class="fa-solid fa-circle-check"
+                  ></i>
+                  <i class="fa-solid fa-circle-play"></i
+                ></span>
+              </div>
+
+              <button class="options-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <a href="#" class="thumbnail-wrapper">
+              <img
+                src="./logoyt/iutub.avif"
+                alt="Miniatura del video"
+                class="thumbnail"
+              />
+              <span class="duration">4:18</span>
+            </a>
+
+            <div class="video-details">
+              <a href="#" class="channel-avatar">
+                <img src="./logoyt/patonana.png" alt="Canal" />
+              </a>
+
+              <div class="video-meta">
+                <h3 class="video-title">
+                  En realidad, volverse adicto a estudiar es fácil.
+                </h3>
+                <span class="channel-name"
+                  >DOMINALO <i class="fa-solid fa-circle-play"></i> 1,3M hace 11
+                  m</span
+                >
+              </div>
+
+              <button class="options-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <a href="#" class="thumbnail-wrapper">
+              <img
+                src="./logoyt/fernan.avif"
+                alt="Miniatura del video"
+                class="thumbnail"
+              />
+              <span class="duration">14:55</span>
+            </a>
+
+            <div class="video-details">
+              <a href="#" class="channel-avatar">
+                <img src="./logoyt/patonana.png" alt="Canal" />
+              </a>
+
+              <div class="video-meta">
+                <h3 class="video-title">
+                  Top 1 Slither.io... Pero 10 AÑOS DESPUÉS !!
+                </h3>
+                <span class="channel-name"
+                  >Fernanfloo <i class="fa-solid fa-circle-check"></i>
+                  <i class="fa-solid fa-circle-play"></i> 1,7M hace 8d</span
+                >
+              </div>
+
+              <button class="options-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <a href="#" class="thumbnail-wrapper">
+              <img
+                src="./logoyt/oscarale.avif"
+                alt="Miniatura del video"
+                class="thumbnail"
+              />
+              <span class="duration">29:35</span>
+            </a>
+
+            <div class="video-details">
+              <a href="#" class="channel-avatar">
+                <img src="./logoyt/patonana.png" alt="Canal" />
+              </a>
+
+              <div class="video-meta">
+                <h3 class="video-title">
+                  ¿QUIERES VIVIR EN MI CASA? ¡Es enserio!
+                </h3>
+                <span class="channel-name"
+                  >Oscar Alejandro <i class="fa-solid fa-circle-check"></i>
+                  <i class="fa-solid fa-circle-play"></i> 420k hace 3 a</span
+                >
+              </div>
+
+              <button class="options-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <a href="#" class="thumbnail-wrapper">
+              <img
+                src="./logoyt/mouredev.avif"
+                alt="Miniatura del video"
+                class="thumbnail"
+              />
+              <span class="duration">14:02</span>
+            </a>
+
+            <div class="video-details">
+              <a href="#" class="channel-avatar">
+                <img src="./logoyt/patonana.png" alt="Canal" />
+              </a>
+
+              <div class="video-meta">
+                <h3 class="video-title">
+                  Lo que haría hoy si tuviera que aprender a programar otra vez
+                </h3>
+                <span class="channel-name"
+                  >MoureDev <i class="fa-solid fa-circle-check"></i>
+                  <i class="fa-solid fa-circle-play"></i> 230k hace 2 m</span
+                >
+              </div>
+
+              <button class="options-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <a href="#" class="thumbnail-wrapper">
+              <img
+                src="./logoyt/luisito.avif"
+                alt="Miniatura del video"
+                class="thumbnail"
+              />
+              <span class="duration">14:34</span>
+            </a>
+
+            <div class="video-details">
+              <a href="#" class="channel-avatar">
+                <img src="./logoyt/patonana.png" alt="Canal" />
+              </a>
+
+              <div class="video-meta">
+                <h3 class="video-title">
+                  Llegando a VENEZUELA! ¿Realmente está como dicen? Primeras
+                  impresiones
+                </h3>
+                <span class="channel-name"
+                  >Luisito Comunida <i class="fa-solid fa-circle-check"></i>
+                  <i class="fa-solid fa-circle-play"></i> 16M hace 9 a</span
+                >
+              </div>
+
+              <button class="options-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+        </section>
+
+        <section class="video_card--shorts">
+          <article class="thumbnail-wrapper--shorts">
+            <a href="#" class="video_card--anchor">
+              <img
+                src="./logoyt/dross.avif"
+                alt="drossRotzank"
+                class="thumbnail_shorts b-radius"
+              />
+
+              <div class="displayflex space-between">
+                <div class="displayflex flex-col">
+                  <span class="fw-bold">ALFAJORES MARPLATENSES</span>
+                  <span>504 K visualizaciones</span>
+                </div>
+
+                <button class="video_shorts--icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </a>
+          </article>
+
+          <article class="thumbnail-wrapper--shorts">
+            <a href="#" class="video_card--anchor">
+              <img
+                src="./logoyt/dross.avif"
+                alt="drossRotzank"
+                class="thumbnail_shorts b-radius"
+              />
+
+              <div class="displayflex space-between">
+                <div class="displayflex flex-col">
+                  <span class="fw-bold">ALFAJORES MARPLATENSES</span>
+                  <span>504 K visualizaciones</span>
+                </div>
+
+                <button class="video_shorts--icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </a>
+          </article>
+
+          <article class="thumbnail-wrapper--shorts">
+            <a href="#" class="video_card--anchor">
+              <img
+                src="./logoyt/dot.avif"
+                alt="drossRotzank"
+                class="thumbnail_shorts b-radius"
+              />
+
+              <div class="displayflex space-between">
+                <div class="displayflex flex-col">
+                  <span class="fw-bold">ALFAJORES MARPLATENSES</span>
+                  <span>504 K visualizaciones</span>
+                </div>
+
+                <button class="video_shorts--icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </a>
+          </article>
+
+          <article class="thumbnail-wrapper--shorts">
+            <a href="#" class="video_card--anchor">
+              <img
+                src="./logoyt/asd.avif"
+                alt="drossRotzank"
+                class="thumbnail_shorts b-radius"
+              />
+
+              <div class="displayflex space-between">
+                <div class="displayflex flex-col">
+                  <span class="fw-bold">ALFAJORES MARPLATENSES</span>
+                  <span>504 K visualizaciones</span>
+                </div>
+
+                <button class="video_shorts--icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </a>
+          </article>
+
+          <article class="thumbnail-wrapper--shorts">
+            <a href="#" class="video_card--anchor">
+              <img
+                src="./logoyt/lenguajes.avif"
+                alt="drossRotzank"
+                class="thumbnail_shorts b-radius"
+              />
+
+              <div class="displayflex space-between">
+                <div class="displayflex flex-col">
+                  <span class="fw-bold">ALFAJORES MARPLATENSES</span>
+                  <span>504 K visualizaciones</span>
+                </div>
+
+                <button class="video_shorts--icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </div>
+            </a>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <footer>Hola, soy el footer</footer>
+  </body>
+</html>
